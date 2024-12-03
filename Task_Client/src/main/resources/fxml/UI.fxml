@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="401.0" prefWidth="592.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.Endsemclient.UIController">
+   <children>
+      <Label layoutX="200.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Task Management App" />
+
+      <TableView fx:id="tasks" layoutX="50.0" layoutY="70.0" prefHeight="250.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="80.0" text="ID" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="300.0" text="Task" />
+            <TableColumn fx:id="statusColumn" prefWidth="120.0" text="Status" />
+         </columns>
+      </TableView>
+
+      <Button fx:id="addTask" layoutX="90.0" layoutY="340.0" onAction="#add" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;" text="Add Task" />
+      <Button fx:id="deleteTask" layoutX="250.0" layoutY="340.0" onAction="#delete" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete Task" />
+      <Button fx:id="markAsCompleted" layoutX="410.0" layoutY="340.0" onAction="#markAsCompleted" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;" text="Mark as Completed" />
+   </children>
+</Pane>
